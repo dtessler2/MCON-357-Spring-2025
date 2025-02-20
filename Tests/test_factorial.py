@@ -1,4 +1,5 @@
 import unittest
+import sys
 from exercises.calculate_factorial import factorial_recursive, process_input
 
 class test_factorial(unittest.TestCase):
@@ -24,6 +25,7 @@ class test_factorial(unittest.TestCase):
         value, error_message = process_input("3.25")
         self.assertNone(value)
         self.assertEqual(error_message, "Number must be an integer")
+
 
 
 
